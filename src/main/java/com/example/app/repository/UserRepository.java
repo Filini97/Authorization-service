@@ -1,6 +1,6 @@
-package repository;
+package com.example.app.repository;
 
-import model.Authorities;
+import com.example.app.model.Authorities;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

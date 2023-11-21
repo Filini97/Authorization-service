@@ -1,16 +1,19 @@
-package service;
+package com.example.app.service;
 
-import exception.InvalidCredentials;
-import exception.UnauthorizedUser;
+import com.example.app.exception.InvalidCredentials;
+import com.example.app.exception.UnauthorizedUser;
+import com.example.app.repository.UserRepository;
 import org.springframework.stereotype.Service;
-import repository.UserRepository;
-import model.Authorities;
+import com.example.app.model.Authorities;
 
 import java.util.List;
 
 @Service
 public class AuthorizationService {
     UserRepository userRepository;
+    public AuthorizationService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     public List<Authorities> getAuthorities(String user, String password) {
         if (isEmpty(user) || isEmpty(password)) {

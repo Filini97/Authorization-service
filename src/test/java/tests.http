@@ -6,4 +6,4 @@ GET http://localhost:8080/authorize?user=manager&password=12345
 
 ###
 
-GET http://localhost:8080/authorize?user=manager&password=16459
+GET http://localhost:8080/authorize?user=user&password=16459
