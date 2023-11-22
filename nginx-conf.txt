@@ -7,8 +7,8 @@ http {
             proxy_pass http://localhost:8080;
         }
 
-        location /signin {
-            try_files /Work/Authorization-service/nginx/;
+        location /sign {
+            try_files /Work/Authorization-service/form/;
         }
     }
 }
